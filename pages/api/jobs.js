@@ -5,7 +5,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    const response = await fetch("https://apim.workato.com/tamannab1/job-postings-v0/jobs", {
+    const response = await fetch("https://apim.workato.com/bpod/job-postings-v0/jobs", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
