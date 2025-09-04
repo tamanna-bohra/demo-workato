@@ -6,7 +6,7 @@ export default async function handler(req, res) {
 
   try {
     const response = await fetch("https://apim.workato.com/bpod/job-postings-v0/jobs", {
-      method: "POST",
+      method: "GET",
       headers: {
         "Content-Type": "application/json",
         "api-token": process.env.WORKATO_API_TOKEN, // stored securely in Vercel
